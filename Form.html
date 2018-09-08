@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script type = "text/javascript">
+function validateForm()
+{
+  var name = document.forms["User Login"]["name"].value;
+  var password = document.forms["User Login"]["password"].value;
+  if (name == "test"|| password == "test")
+  {
+
+    return true;
+  }
+  else {
+    alert ("Invalid User");
+    return false;
+  }
+}
+</script>
+<title>
+LAMTBNK
+</title>
+</head>
+<body>
+  <section class="container">
+    <h1 id="title-form">Login</h1>
+
+    <form id="Login">
+
+      <div class="addnew">
+        <label for="name">Name:</label>
+        <input id="name" name="name" type="text" placeholder="user name" class="field" >
+      </div>
+
+<div class="addnew">
+        <label for="password">Password:</label>
+        <input id="password" name="password" type="password" placeholder="enter password" class="field">
+
+
+      </div>
+
+
+
+      <button id="login">Login</button>
+
+    </form>
+  </section>
+
+
+<script src="js/FormOperation.js"> </script>
+
+</body>
+
+</html>
